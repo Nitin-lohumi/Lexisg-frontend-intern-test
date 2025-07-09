@@ -41,7 +41,7 @@ export default function App() {
       }, 1500);
     } else {
       setError(
-        `This demo only supports a specific legal query about a motor accident case under Section 166 of the Motor Vehicles Act . (${(
+        `This demo only supports a specific legal query about a motor accident case under Section 166 of the Motor Vehicles Act .use this - (${(
           <i>
             In a motor accident claim where the deceased was self-employed and
             aged 54–55 years at the time of death, is the claimant entitled to
