@@ -9,6 +9,7 @@ export default function App() {
 
   const allowedQuery =
     "In a motor accident claim where the deceased was self-employed and aged 54–55 years at the time of death, is the claimant entitled to an addition towards future prospects in computing compensation under Section 166 of the Motor Vehicles Act, 1988? If so, how much?";
+
   const handleQuerySubmit = (query) => {
     setError("");
     setResponse(null);
@@ -41,23 +42,26 @@ export default function App() {
       }, 1500);
     } else {
       setError(
-        `This demo only supports a specific legal query about a motor accident case under Section 166 of the Motor Vehicles Act .use this - (${(
+        "This demo only supports a specific legal query about a motor accident case under Section 166 of the Motor Vehicles Act. Use this query: ........."
+      );
+      setTimeout(() => {
+        setError(
           <i>
             In a motor accident claim where the deceased was self-employed and
             aged 54–55 years at the time of death, is the claimant entitled to
             an addition towards future prospects in computing compensation under
-            Section 166 of the Motor Vehicles Act, 1988? If so, how much?.
+            Section 166 of the Motor Vehicles Act, 1988? If so, how much?
           </i>
-        )})`
-      );
+        );
+      }, 1500);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-400 p-6 pt-12 md:pt-3 ">
+    <div className="min-h-screen bg-gray-400 p-6 pt-12 md:pt-3">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold mb-6 text-center text-blue-700">
-          Lexi Legal Assistant !
+          Lexi Legal Assistant!
         </h1>
         <QueryInput onSubmit={handleQuerySubmit} loading={loading} />
         {error && (
@@ -65,7 +69,6 @@ export default function App() {
             {error}
           </div>
         )}
-
         {response && <AnswerCard response={response} />}
       </div>
     </div>
