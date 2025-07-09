@@ -1,28 +1,78 @@
-# React + Vite
+# ⚖️ Lexi Legal Assistant – Frontend Assessment (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, ChatGPT-style legal interface that simulates how **Lexi** helps users get AI-generated legal answers backed by **citations to real documents**.  
+Built with ❤️ using React & Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Demo Screenshot
 
-## Expanding the ESLint configuration
+(./public/ss1.png)
+(./ss2.png) 
+(./public/ss3.png) 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
 
+## 🚀 Features
 
-# Lexisg-frontend-intern-test
+✅ Ask a legal question  
+✅ Simulated AI-generated legal answer  
+✅ Clickable citation from judgment  
+✅ Opens a **simulated PDF** with scroll + highlight of **Para 7**  
+✅ Link to the **real PDF on SharePoint**  
+✅ **Fuzzy query matching** (bonus logic)  
+✅ Fully responsive UI  
+✅ Clean Tailwind CSS styling  
 
-## Features
-- React-based Legal Assistant UI
-- Chat-style query + answer interface
-- Clickable citations that open PDFs
-- Simulated scroll-to-paragraph feature in modal
-- Tailwind CSS for styling
+---
 
-## How to Run
+## 🧪 Supported Query
 
-```bash
-npm install
-npm start
+This demo is **limited to one specific legal query** (as per assessment).  
+
+> “In a motor accident claim where the deceased was self-employed and aged 54–55 years at the time of death, is the claimant entitled to an addition towards future prospects in computing compensation under Section 166 of the Motor Vehicles Act, 1988? If so, how much?”
+
+### 💡 Smart Query Matching (Bonus!)
+You don’t need to type this word-for-word!  
+We use **fuzzy matching** to allow slight variations like:
+- Lowercase or missing punctuation
+- Reordered phrases
+
+As long as it includes:
+`motor accident`, `self-employed`, `section 166`, `motor vehicles act`, `54`
+
+✅ You'll get the AI answer!
+
+❌ Any unrelated legal question (e.g., Hindu Marriage Act) will show an error:
+> _“This demo only supports a specific legal query...”_
+
+---
+
+## 📄 Citation + PDF Simulation
+
+🟡 Clicking the citation:
+- Opens a **modal** (mimicking a PDF viewer)
+- Auto-scrolls to **Para 7**
+- Highlights it with a yellow background
+- Also includes a **link to the actual PDF on SharePoint**
+
+### ❗ Why Not Real PDF Highlight?
+
+SharePoint PDFs **cannot be embedded or auto-highlighted** due to security restrictions (`X-Frame-Options: DENY`).  
+Hence, this UI **simulates PDF scroll + highlight** as per the assignment instructions:
+
+> _“Bonus points if the PDF scrolls to the specific paragraph / highlights the specific text (mock only)”_
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React.js (CRA)
+- 🎨 Tailwind CSS
+- 🔀 Conditional rendering + modal logic
+- 💬 Smart error handling for unsupported queries
+
+---
+
+## 📂 Folder Structure
+

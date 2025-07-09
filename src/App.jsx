@@ -52,9 +52,7 @@ export default function App() {
         <h1 className="text-3xl font-bold mb-6 text-center text-blue-700">
           Lexi Legal Assistant !
         </h1>
-
         <QueryInput onSubmit={handleQuerySubmit} loading={loading} />
-
         {error && (
           <div className="bg-red-100 shadow-sm shadow-red-500 text-red-700 p-3 mb-4 rounded-md">
             {error}
