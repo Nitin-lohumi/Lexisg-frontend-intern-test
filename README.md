@@ -5,28 +5,30 @@ Built with ❤️ using React & Tailwind CSS.
 
 ---
 
-## 🖼️ Demo Screenshot
+## 📸 Demo Screenshots
 
-(./public/ss1.png)
-(./ss2.png) 
-(./public/ss3.png) 
+![Screenshot 1](./public/ss1.png)
 
----
+![Screenshot 2](./public/ss2.png)
 
-## 🚀 Features
-
-✅ Ask a legal question  
-✅ Simulated AI-generated legal answer  
-✅ Clickable citation from judgment  
-✅ Opens a **simulated PDF** with scroll + highlight of **Para 7**  
-✅ Link to the **real PDF on SharePoint**  
-✅ **Fuzzy query matching** (bonus logic)  
-✅ Fully responsive UI  
-✅ Clean Tailwind CSS styling  
+![Screenshot 3](./public/ss3.png)
 
 ---
 
-## 🧪 Supported Query
+##  Features
+
+ Ask a legal question  
+ Simulated AI-generated legal answer  
+ Clickable citation from judgment  
+ Opens a **simulated PDF** with scroll + highlight of **Para 7**  
+ Link to the **real PDF on SharePoint**  
+ **Fuzzy query matching** (bonus logic)  
+ Fully responsive UI  
+ Clean Tailwind CSS styling  
+
+---
+
+##  Supported Query
 
 This demo is **limited to one specific legal query** (as per assessment).  
 
@@ -41,22 +43,22 @@ We use **fuzzy matching** to allow slight variations like:
 As long as it includes:
 `motor accident`, `self-employed`, `section 166`, `motor vehicles act`, `54`
 
-✅ You'll get the AI answer!
+ You'll get the AI answer!
 
-❌ Any unrelated legal question (e.g., Hindu Marriage Act) will show an error:
+Any unrelated legal question (e.g., Hindu Marriage Act) will show an error:
 > _“This demo only supports a specific legal query...”_
 
 ---
 
-## 📄 Citation + PDF Simulation
+##  Citation + PDF Simulation
 
-🟡 Clicking the citation:
+ Clicking the citation:
 - Opens a **modal** (mimicking a PDF viewer)
 - Auto-scrolls to **Para 7**
 - Highlights it with a yellow background
 - Also includes a **link to the actual PDF on SharePoint**
 
-### ❗ Why Not Real PDF Highlight?
+### Why Not Real PDF Highlight?
 
 SharePoint PDFs **cannot be embedded or auto-highlighted** due to security restrictions (`X-Frame-Options: DENY`).  
 Hence, this UI **simulates PDF scroll + highlight** as per the assignment instructions:
@@ -65,14 +67,11 @@ Hence, this UI **simulates PDF scroll + highlight** as per the assignment instru
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
-- ⚛️ React.js (CRA)
-- 🎨 Tailwind CSS
-- 🔀 Conditional rendering + modal logic
-- 💬 Smart error handling for unsupported queries
-
+-  React.js (CRA)
+-  Tailwind CSS
+-  Conditional rendering 
+-  error handling for unsupported queries
 ---
-
-## 📂 Folder Structure
 
