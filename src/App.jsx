@@ -41,7 +41,14 @@ export default function App() {
       }, 1500);
     } else {
       setError(
-        "This demo only supports a specific legal query about a motor accident case under Section 166 of the Motor Vehicles Act. please Ask a Legal Question ."  
+        `This demo only supports a specific legal query about a motor accident case under Section 166 of the Motor Vehicles Act . (${(
+          <i>
+            In a motor accident claim where the deceased was self-employed and
+            aged 54–55 years at the time of death, is the claimant entitled to
+            an addition towards future prospects in computing compensation under
+            Section 166 of the Motor Vehicles Act, 1988? If so, how much?.
+          </i>
+        )})`
       );
     }
   };
