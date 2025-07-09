@@ -57,4 +57,6 @@ We use **fuzzy matching** to allow slight variations like:
 -  Conditional rendering 
 -  error handling for unsupported queries
 ---
+## Live Demo
 
+[https://lexisg-frontend-intern-test-one.vercel.app](https://lexisg-frontend-intern-test-one.vercel.app)
